@@ -3,7 +3,8 @@ body {
 }
 main {
     margin: 0 auto;
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
 }
 h1 {
     text-align: center;
@@ -11,14 +12,19 @@ h1 {
 }
 textarea {
     margin: 0 auto;
-    display: block;
+    padding: 10px;
+    width: 100%;
 }
 #buttons-container {
     display: flex;
     justify-content: center;
     margin: 15px 0;
 }
-#buttons-container button {
+button {
     margin: 5px;
     padding: 5px;
+    appearance: none;
+}
+#reset-button {
+    background-color: lightgreen;
 }
