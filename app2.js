@@ -28,3 +28,6 @@ let randomPick = (n, min, max) => {
 
 // START PROGRAM
 console.log(randomPick(32, -88, 100));
+console.log(randomPick(6, 1, 49)); // Primitiva
+console.log(randomPick(15, 1, 15)); // Billar
+console.log(randomPick(1, 1, 6)); // Dado
