@@ -7,11 +7,11 @@ let encryptedTextarea = document.getElementById("encrypted-text");
 let transformedString = "";
 
 // Transform function
-var transform = function (inputTextarea, outputTextarea, inputAlphabet, outputAlphabet) {
+let transform = function (inputTextarea, outputTextarea, inputAlphabet, outputAlphabet) {
     let inputString = inputTextarea.value.toLowerCase();
     for (let letter of inputString) {
         inputLetterIndex = inputAlphabet.indexOf(letter);
-        transformedString += (inputLetterIndex == -1) ? letter : outputAlphabet[inputLetterIndex];
+        transformedString += (inputLetterIndex === -1) ? letter : outputAlphabet[inputLetterIndex];
     }
     outputTextarea.value = transformedString;
     transformedString = "";
